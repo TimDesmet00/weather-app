@@ -1,0 +1,35 @@
+body{
+    main{
+        #answer-api{
+            padding: 0em 5%;
+            .daily-average{
+                margin: 3em 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:600px){
+    body{
+        main{
+            #answer-api{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1024px){
+    body{
+        main{
+            #answer-api{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                font-size: 1.2em;
+            }
+        }
+    }
+}

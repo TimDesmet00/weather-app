@@ -1,0 +1,105 @@
+body {
+  background: linear-gradient(0.2turn, rgb(86, 86, 229), rgb(121, 121, 217), rgb(86, 86, 229));
+  color: antiquewhite;
+}
+body header h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px) {
+  body header h1 {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body header h1 {
+    font-size: 4em;
+  }
+}
+body main section article .input {
+  text-align: center;
+}
+body main section article .input .label {
+  margin: 0.5em;
+  font-size: 1.2em;
+}
+body main section article .input #city {
+  background-color: rgb(86, 86, 229);
+  border: 2px outset antiquewhite;
+  text-align: center;
+  color: antiquewhite;
+}
+body main section article .btn {
+  margin: 0.5em 0;
+  text-align: center;
+}
+body main section article .btn #btn-city {
+  padding: 0.5em 1.5em;
+  border: 2px solid antiquewhite;
+  border-radius: 12px;
+  background-color: rgb(86, 86, 229);
+  color: antiquewhite;
+  transition: 1.2s;
+}
+body main section article .btn #btn-city:hover {
+  box-shadow: 10px 5px 2px black;
+}
+
+@media only screen and (min-width: 600px) {
+  body main section article .input .label {
+    font-size: 1.8em;
+  }
+  body main section article .input #city {
+    box-sizing: content-box;
+    font-size: 1.2em;
+  }
+  body main section article .btn #btn-city {
+    font-size: 1.2em;
+  }
+}
+body main #answer-api {
+  padding: 0em 5%;
+}
+body main #answer-api .daily-average {
+  margin: 3em 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  body main #answer-api {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.1em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body main #answer-api {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.2em;
+  }
+}
+body main .table {
+  text-align: center;
+}
+body main .table .btn-table {
+  margin: 1.5em 0;
+}
+body main .table .btn-table #generateChart {
+  padding: 0.5em 1.5em;
+  border: 2px solid antiquewhite;
+  border-radius: 12px;
+  background-color: rgb(86, 86, 229);
+  color: antiquewhite;
+  transition: 1.2s;
+}
+body main .table .btn-table #generateChart:hover {
+  box-shadow: 10px 5px 2px black;
+}
+
+body footer {
+  margin-top: 1.5em;
+  text-align: center;
+  line-height: 0.3em;
+}/*# sourceMappingURL=style.css.map */

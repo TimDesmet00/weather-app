@@ -1,0 +1,13 @@
+body{
+    main{
+        .table{
+            text-align: center;
+            .btn-table{
+                margin: 1.5em 0;
+                #generateChart{
+                    @include btn;
+                }
+            }
+        }
+    }
+}

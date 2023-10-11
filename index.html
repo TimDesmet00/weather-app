@@ -7,7 +7,7 @@
         <meta name="keywords" content="méteo, application, formation">  <!--mot cléf pour le moteur de recherche: keyword1, keyword2, ...-->
         <meta name="author" content="Desmet Tim">   <!--auteur de la page: auteur1, auteur2, ...-->
         <meta name="viewport" content="width=device-width, initial-scale=1">  <!--pour garder les proportions sur différent affichage-->
-        <!-- <link rel="stylesheet" href="./sass/main/style.css">   lien vers la feuille de style CSS -->
+        <link rel="stylesheet" href="./sass/main/style.css">   <!--lien vers la feuille de style CSS-->
         <script type="module" defer src="./javascript/script.js"></script> <!--lien vers la page codé en javascript-->
         <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -23,23 +23,30 @@
         <main>
             <section>
                 <article>
-                    <label for="city">Ville: </label>
+                    <div class="input">
+                    <p class="label"><label for="city">Ville: </label></p>
                     <input type="text" name="city" id="city">
-
+                    </div>
+                    <div class="btn">
                     <button id="btn-city">Soumettre</button>
+                    </div>
                 </article>
                 <section id="answer-api">
 
                 </section>
-                <section>
-                    <canvas id="temperatureChart" width="800" height="400"></canvas>
-
-                    <button id="generateChart">Afficher le graphique</button>
+                <section class="table">
+                    <div class="btn-table">
+                        <button id="generateChart">Afficher le graphique</button>
+                    </div>
+                    
+                    <canvas id="temperatureChart"></canvas>
+                    
                 </section>
             </section>
         </main>
         <footer>
-
+            <p>Crée pour votre plus grand plaisir par:</p>
+            <p>Desmet Tim.</p>
         </footer>
     </body>
     

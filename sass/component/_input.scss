@@ -1,0 +1,53 @@
+body{
+    main{
+        section{
+            article{
+                .input{
+                    text-align: center;
+                    .label{
+                        margin: 0.5em;
+                        font-size: 1.2em;
+                    }
+                    #city{
+                        background-color: rgb(86, 86, 229);
+                        border: 2px outset antiquewhite;
+                        text-align: center;
+                        color: antiquewhite;
+                    }                
+                }
+                .btn{
+                    margin: 0.5em 0;
+                    text-align: center;
+                    #btn-city{
+                        @include btn;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:600px){
+    body{
+        main{
+            section{
+                article{
+                    .input{
+                        .label{
+                            font-size: 1.8em;
+                        }
+                        #city{
+                            box-sizing: content-box;
+                            font-size: 1.2em;
+                        }
+                    }
+                    .btn{
+                        #btn-city{
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

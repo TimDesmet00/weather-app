@@ -1,7 +1,28 @@
+// import { apikey } from "./var.js";
+
 const inputCity = document.getElementById("city");
 const btnCity = document.getElementById("btn-city");
 const dailyAverages = [];
-let apiKey;
+const apiKey = "8c8a54427b5d60c0d66c1eac58dbdc26";
+// const getApiKey = () => {
+//   let apiKey;
+//   console.log("coucou");
+//   fetch("./config.json")
+//     .then((response) => {
+//       if (!response.ok) {
+//         throw new Error("La requête a échoué");
+//       }
+//       console.log("fichier: ", response.json);
+//       return response.json();
+//     })
+//     .then((config) => {
+//       console.log("clé de l'api: ", config.value);
+//       return (apiKey = config.value);
+//     })
+//     .catch((error) => {
+//       console.error("Erreur lors du chargement de la configuration : ", error);
+//     });
+// };
 
 btnCity.addEventListener("click", () => {
   const cityChoice = inputCity.value;
@@ -9,25 +30,6 @@ btnCity.addEventListener("click", () => {
     localStorage.setItem("selectedCity", cityChoice);
 
     fetchWeatherData(cityChoice);
-
-    fetch("./config.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("La requête a échoué");
-        }
-        console.log(response.json);
-        return response.json();
-      })
-      .then((config) => {
-        console.log("clé de l'api: ", config.apiKey);
-        apiKey = config.apiKey;
-      })
-      .catch((error) => {
-        console.error(
-          "Erreur lors du chargement de la configuration : ",
-          error
-        );
-      });
   } else {
     alert("Veuillez entrer une ville.");
   }
@@ -55,8 +57,6 @@ btnCity.addEventListener("click", () => {
 
 async function fetchWeatherData(city) {
   try {
-    const apiKey = await getApiKey();
-
     if (!apiKey) {
       console.error("La clé API est manquante ou invalide.");
       return;

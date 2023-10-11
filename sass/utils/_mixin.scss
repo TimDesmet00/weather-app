@@ -1,0 +1,11 @@
+@mixin btn {
+    padding: 0.5em 1.5em;
+    border: 2px solid antiquewhite;
+    border-radius: 12px;
+    background-color: rgb(86, 86, 229);
+    color: antiquewhite;
+    transition: 1.2s;
+    &:hover{
+        box-shadow: 10px 5px 2px black;
+    }
+}
