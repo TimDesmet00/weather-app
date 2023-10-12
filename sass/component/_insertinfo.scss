@@ -5,6 +5,12 @@ body{
             .daily-average{
                 margin: 3em 0;
                 text-align: center;
+                .description-image {
+                    width: 50px; // Ajustez la taille selon vos besoins
+                    height: 50px;
+                    background-size: cover; // Ajustez le style de fond pour le dimensionnement de l'image
+                    margin-right: 10px; // Espace entre l'image et d'autres éléments
+                  }
             }
         }
     }
