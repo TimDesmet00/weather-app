@@ -35,6 +35,7 @@ async function fetchWeatherData(city) {
 
     const answerApiSection = document.getElementById("answer-api");
     answerApiSection.innerHTML = "";
+    console.log("Section 'answer-api' réinitialisée.");
 
     const forecastsByDay = {};
 
@@ -112,10 +113,10 @@ const calculateDailyAverageDescription = (forecastList) => {
 const createDescriptionImageElement = (mainCategory) => {
   const image = document.createElement("img");
   image.classList.add("description-image");
-
+  console.log(mainCategory);
   const codeMapping = {
-    "clear sky": "01d",
-    "few clouds": "02d",
+    clear: "01d",
+    clouds: "02d",
     "scattered clouds": "03d",
     "broken clouds": "04d",
     "shower rain": "09d",

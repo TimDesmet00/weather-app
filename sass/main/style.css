@@ -62,8 +62,12 @@ body main #answer-api {
   padding: 0em 5%;
 }
 body main #answer-api .daily-average {
-  margin: 3em 0;
+  margin: 3em 20%;
   text-align: center;
+  border: 3px solid antiquewhite;
+  outline: outset;
+  border-radius: 25px;
+  background: linear-gradient(0.2turn, rgb(86, 86, 229), rgb(121, 121, 217), rgb(86, 86, 229));
 }
 body main #answer-api .daily-average .description-image {
   width: 50px;

@@ -2,14 +2,31 @@ body{
     main{
         #answer-api{
             padding: 0em 5%;
+            // .daily-average:first-child{
+            //     background: none;
+            //     border: none;
+            //     outline: none;
+            //     font-size: 1.5em;
+            //     .description-image {
+            //         width: 100px;
+            //         height: 100px;
+            //         background-size: cover;
+            //         margin-right: 10px;
+            //         line-height: 1em;
+            //     }
+            // }
             .daily-average{
-                margin: 3em 0;
+                margin: 3em 20%;
                 text-align: center;
+                border: 3px solid antiquewhite;
+                outline: outset;
+                border-radius: 25px;
+                background: linear-gradient(0.20turn, rgb(86, 86, 229), rgb(121, 121, 217), rgb(86, 86, 229));
                 .description-image {
-                    width: 50px; // Ajustez la taille selon vos besoins
+                    width: 50px;
                     height: 50px;
-                    background-size: cover; // Ajustez le style de fond pour le dimensionnement de l'image
-                    margin-right: 10px; // Espace entre l'image et d'autres éléments
+                    background-size: cover;
+                    margin-right: 10px;
                   }
             }
         }
